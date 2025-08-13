@@ -8,7 +8,7 @@ books=pickle.load(open("../br system/books.pkl", "rb"))
 similarity=pickle.load(open("../br system/similarity.pkl", "rb"))
 app=Flask(__name__)
 
-# Precompute title list for fast suggestions
+
 all_titles = [str(x) for x in pt.index.tolist()]
 @app.route('/')
 def index():
@@ -31,11 +31,9 @@ def suggest_titles():
         return jsonify([])
 
     query_lower = query.lower()
-
-    # 1) Prefix matches
+    
     prefix_matches = [t for t in all_titles if t.lower().startswith(query_lower)]
 
-    # 2) Contains matches (excluding already included)
     if len(prefix_matches) < 8:
         contains_matches = [
             t for t in all_titles
@@ -43,7 +41,6 @@ def suggest_titles():
         ]
         prefix_matches.extend(contains_matches[: max(0, 8 - len(prefix_matches))])
 
-    # 3) Fuzzy fallback using difflib
     if len(prefix_matches) < 8:
         fuzzy_needed = 8 - len(prefix_matches)
         fuzzy_candidates = difflib.get_close_matches(query, all_titles, n=fuzzy_needed, cutoff=0.5)
