@@ -26,12 +26,11 @@ python app.py
 3. Open `http://127.0.0.1:5000` in your browser.
 
 ### Screenshots
-Replace these paths with your actual screenshot files inside `docs/`.
 
-![Home](docs/home.png)
-![Recommend](docs/recommend.png)
-![Autocomplete](docs/autocomplete.png)
-![Results](docs/results.png)
-![Contact](docs/contact.png)
+![Home](<book rec system/Screenshot (1).png>)
+![Recommend](<book rec system/Screenshot (2).png>)
+![Autocomplete](<book rec system/Screenshot (3).png>)
+![Results](<book rec system/Screenshot (4).png>)
+![Contact](<book rec system/Screenshot (5).png>)
 
 
