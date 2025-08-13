@@ -12,7 +12,7 @@ This is a collaborative filtering based book recommendation system. It recommend
 - `app.py`: Flask server and routes
 - `templates/`: HTML templates
 - `*.pkl`: artifacts for popularity, pivot table, similarity, and metadata. These files are generated from a data-prep script/notebook that will be added soon.
-- `docs/`: screenshots used in this README (add your images here)
+- `docs/`: screenshots used in this README 
 
 ### Run locally
 1. Create a virtual environment and install Flask (and any other requirements you need):
