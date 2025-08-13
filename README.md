@@ -1,6 +1,6 @@
 ## Recommender Systems
 
-This is a collaborative filtering based book recommendation system. It recommends similar books using user ratings and item-item similarity.
+This is a collaborative filtering based book recommendation system. It recommends similar books using user ratings and item-item similarity. Built with Flask and Bootstrap; templates use Jinja so small Python expressions/variables render in HTML.
 
 ### How it works
 - Collaborative filtering over a pivot table of users vs. books (`pt.pkl`), with a precomputed similarity matrix (`similarity.pkl`).
@@ -11,7 +11,7 @@ This is a collaborative filtering based book recommendation system. It recommend
 ### Project structure
 - `app.py`: Flask server and routes
 - `templates/`: HTML templates
-- `*.pkl`: artifacts for popularity, pivot table, similarity, and metadata
+- `*.pkl`: artifacts for popularity, pivot table, similarity, and metadata. These files are generated from a data-prep script/notebook that will be added soon.
 - `docs/`: screenshots used in this README (add your images here)
 
 ### Run locally

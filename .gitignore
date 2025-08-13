@@ -12,6 +12,11 @@ venv/
 .idea/
 
 # Data / artifacts
+# Allow committed model artifacts for this project
+!books.pkl
+!popular_df.pkl
+!pt.pkl
+!similarity.pkl
 *.pkl
 *.csv
 *.zip
