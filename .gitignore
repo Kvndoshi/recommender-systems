@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Data / artifacts
+*.pkl
+*.csv
+*.zip
+*.log
+# Allow screenshots in docs/
+!docs/*.png
+!docs/*.jpg
+!docs/*.jpeg
+*.png
+*.jpg
+*.jpeg
+
+# OS
+.DS_Store
+Thumbs.db
+
+
